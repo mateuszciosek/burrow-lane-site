@@ -7,6 +7,6 @@ Public site for the Burrow Lane games for children (Fire Station Crew, Baby Drag
 - `/terms/` terms (purchases and the Burrow Lane Pass), `/terms/pl/`
 - `/support/` help and contact, `/support/pl/`
 
-Static HTML, no build step. Spanish, Portuguese, Italian and French pages follow (D-039).
+Static HTML, no build step. Each page has /<lang>/ versions: pl, es, pt, it, fr (D-039).
 
 Before publishing: confirm the support e-mail (placeholder `support@burrowlane.app`) and the publisher name.
