@@ -1,0 +1,39 @@
+:root {
+  --paper: #F4F6FB; --cell: #FFFFFF; --ink: #1A1F3A; --body: #3E4462; --muted: #5E6584;
+  --faint: #D9DDEA; --red: #D4462A; --leaf: #1E8A63; --plum: #7A49B5;
+}
+* { box-sizing: border-box; }
+html { background: var(--paper); color-scheme: light; }
+body {
+  margin: 0; background: var(--paper); color: var(--body);
+  font-family: "Figtree", "Segoe UI", system-ui, sans-serif;
+  font-size: 17px; line-height: 1.6;
+}
+main { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+header { margin-bottom: 2.25rem; }
+.eyebrow {
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--muted); margin: 0 0 0.5rem;
+}
+h1, h2, h3 { font-family: "Baloo 2", "Trebuchet MS", system-ui, sans-serif; color: var(--ink); line-height: 1.15; margin: 0; }
+h1 { font-size: 2.6rem; font-weight: 800; }
+h2 { font-size: 1.45rem; font-weight: 700; margin: 2.2rem 0 0.5rem; }
+h3 { font-size: 1.15rem; font-weight: 700; margin: 1.4rem 0 0.3rem; }
+.rule { margin: 0.6rem 0 0; font-size: 0.85rem; color: var(--muted); }
+.lang { margin: 0.8rem 0 0; font-size: 0.9rem; }
+p { margin: 0 0 1rem; }
+ul, ol { padding-left: 1.25rem; margin: 0 0 1rem; }
+li { margin-bottom: 0.4rem; }
+a { color: var(--plum); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+strong { color: var(--ink); font-weight: 700; }
+.apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: 0.9rem; margin: 1.2rem 0 1.6rem; }
+.app { background: var(--cell); border: 1px solid var(--faint); border-radius: 14px; padding: 0.9rem 1rem; }
+.app h3 { margin: 0 0 0.2rem; }
+.app p { margin: 0; font-size: 0.95rem; }
+.app.fire h3 { color: var(--red); } .app.wish h3 { color: var(--leaf); } .app.make h3 { color: var(--plum); }
+.box { background: var(--cell); border: 1px solid var(--faint); border-radius: 14px; padding: 1rem 1.2rem; margin: 0 0 1.2rem; }
+table { border-collapse: collapse; width: 100%; margin: 0 0 1.25rem; font-size: 0.95rem; }
+th, td { text-align: left; vertical-align: top; padding: 0.55rem 0.5rem; border-bottom: 1px solid var(--faint); }
+th { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+footer { margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--faint); color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 480px) { h1 { font-size: 2.1rem; } }
